@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 3</title>
+</head>
+<body>
+    <h1>Return Even Or Odd Number</h1>
+    <script>
+    
+       var number = window.prompt("Enter Number =");
+       
+       document.write("The number is : " + number);
+       document.write("<br>");
+       
+       var result = parity(number);
+       document.write("The result is : " + result);
+
+        function parity(num){
+           
+           if(num % 2 == 0)
+            return "Even";
+            
+           else
+             return "Odd";
+        }
+    </script>
+    
+</body>
+</html>
+    
+   
