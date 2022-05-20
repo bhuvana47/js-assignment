@@ -1,0 +1,74 @@
+<html>
+
+<head> 
+
+<title>  </title>
+
+</head>
+
+<body>
+
+<script>
+
+
+	function Person(firstName,lastName,age,skills,dateOfbirth,address,married,profession)
+	{
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.age = age;
+		this.skills = skills;
+		this.dateOfbirth = dateOfbirth;
+		this.address = address;
+		this.married = married;
+		this.profession = profession;
+	}
+
+	
+	Aagya = new Person("Aagya","singh",99,['java','c#'],"05/06/1998",{city:"Mumbai",pincode:54872},"false","AnalystA4");
+
+	Abhi = new Person("Abhi",55,["html","css"],"02/01/1997","false","JrAnalyst");
+
+	Sadhana = new Person("Sadhana",10,"04/08/1999","false","developer");
+
+    
+	var Sadhana = Object.create(Aagya); 
+	
+	
+	var Sadhana = Object.create(Abhi);
+	
+	print = function()
+	{
+		document.write("<br> Aagya Details : <br>");
+
+		document.write( "<br>First Name : " + Aagya.firstName + 
+						"<br> Last Name: " + Aagya.lastName + 
+						"<br> Age: " + Aagya.age + 
+						"<br> Skills : " + Aagya.skills +
+						"<br> Date of Birth: " + Aagya.dateOfbirth + 
+						"<br> City : " + Aagya.address.city + 
+						"<br> Pincode: " + Aagya.address.pincode + 
+						"<br> Married " + Aagya.married + 
+						"<br> Profession : " + Aagya.profession);
+					
+		document.write("<br><br> Abhi Details : <br>");
+		
+		document.write(" <br> Last Name : " + Abhi.lastName );
+		document.write(" <br> City :  " + Abhi.address.city);
+		document.write(" <br> Pincode: " + Abhi.address.pincode);
+		
+	     document.write("<br><br> Sadhana Details : <br>");
+
+		document.write(" <br> Last Name : " + Sadhana.lastName);
+		document.write( " <br> Skills: " + Sadhana.skills);
+		document.write(" <br> City : " + Sadhana.address.city);
+		document.write(" <br> Pincode: " + Sadhana.address.pincode );
+		document.write(" <br> Profession : " + Sadhana.profession);
+	}();
+
+	
+</script>
+
+</body>
+
+
+</html>
