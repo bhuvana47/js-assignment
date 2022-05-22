@@ -1,0 +1,32 @@
+<html>
+	 <head>
+	    <title> Function Assignment  </title>
+	 </head>
+	 
+	 <body>
+	 
+	 <h1> Composed Function </h1>
+	 
+	  <script>
+	  
+	      var f1 = compose(square, double);
+		
+		  document.write(f1(5));
+		  
+		  function compose(x){
+				return (square(double(x)));
+		  }
+		 
+		 
+		   function square(x){ 
+			   return(x * x);
+		   }
+		   
+
+		   function double(x){
+				return(x * 2);
+		   }
+		   
+	  </script>
+	 </body>
+</html>
